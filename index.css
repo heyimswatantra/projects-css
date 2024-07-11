@@ -1,0 +1,275 @@
+html {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: #f1f0f6;
+    margin: 0px;
+    /* align-items: center; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Align items on the same line */
+    align-items: center; /* Vertically center the heading */
+    background-color: #f0f0f0; /* Set a background color for the nav */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.backBtn {
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+    left: 10px;
+    top: 6px;
+    position: relative;
+}
+
+.heading {
+    position: static;
+    z-index: 4;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin: 0px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    top: 0px;
+    width: 100%;
+    /* height: px; */
+    font-family: sans-serif;
+
+}
+
+input::placeholder {
+    text-indent: 10px;
+}
+
+#searchBar {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 1rem;
+    width: 95%;
+    height: 48px;
+    border-radius: 18px;
+    border-style: none;
+    background-color: #f1f0f6;
+}
+
+.searchIcon {
+    display: inline;
+    position: absolute;
+    width: 25px;
+    left: 92vw;
+    top: 30px;
+}
+
+.whiteContainer {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    top: 16px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* height: 90vh; */
+}
+
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three equal-width columns */
+    gap: 20px;
+}
+  
+
+  
+.card {
+    display: flex;
+    align-items: center;
+    max-height: 111px;
+    max-width: 414px;
+    padding: 16px;
+    margin-top: 21px;
+
+}
+
+.details {
+    height: 100%;
+    width: 35%;
+    margin-left: 20px;
+    padding-top: 16px;
+}
+
+.contacts {
+    margin-left: 50px;
+    height: 100%;
+    width: 25%;
+    display: flex;
+}
+
+.avatar {
+    height: 85px;
+    width: 77px;
+    border-radius: 12px;
+}
+
+span {
+     width: 50%;
+}
+
+.name {
+    font-family: "Popins", sans-serif;
+    padding-bottom: 3px;
+    margin-top: 2%;
+    margin-bottom: 3px;
+    padding-top: 0px;
+}
+
+.phone {
+    font-size: small;
+    font-family: "Roboto", sans-serif;
+}
+
+.role {
+    font-size: small;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.contanctIcon {
+    width: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .cardContainer {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cardContainer {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1025px) {
+    .cardContainer {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .leftOne {
+        margin-right: 1.5rem;
+    }
+    
+    .leftTwo {
+        margin-left: 1.5rem;
+    }
+    
+    .rightOne {
+        margin-right: 1.5rem;
+    }
+    
+    .rightTwo {
+        margin-left: 1.5rem;
+    }
+}
+  
+
+.footer {
+    position: fixed;
+    z-index: 7;
+    bottom: 0;
+    /* display: grid; */
+    /* grid-template-columns:  */
+    /* height: ; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #f1f0f6;
+    flex-grow: 1;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.center {
+    display: grid;
+    position: relative;
+    bottom: 1rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.leftOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.leftTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.rightOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.rightTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    text-align: center;
+    margin: 0px;
+    margin-top: 0.75rem;
+}
+
+
+.footerIcons {
+    max-width: 18px;
+    max-height: 18px;
+}
+
+.ipass {
+    
+}
