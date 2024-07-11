@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    font-family: "Popins", sans-serif;
 }
 
 body {
@@ -31,19 +35,28 @@ body {
     position: static;
     z-index: 4;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
     margin: 0px;
     padding: 1.5rem 1rem 1rem 1rem;
     top: 0px;
     width: 100%;
     /* height: px; */
-    font-family: sans-serif;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: extra-expanded;
 
 }
 
 input::placeholder {
     text-indent: 10px;
+}
+
+.searchBoxContainer{
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
 }
 
 #searchBar {
@@ -56,21 +69,21 @@ input::placeholder {
     border-radius: 18px;
     border-style: none;
     background-color: #f1f0f6;
+    font-family: 'Inter', sans-serif;
 }
 
 .searchIcon {
-    display: inline;
     position: absolute;
+    overflow: hidden;
     width: 25px;
-    left: 92vw;
-    top: 30px;
+    right: 4%;
+    padding-top: 2rem;
 }
 
 .whiteContainer {
     position: relative;
     width: 100%;
     background-color: white;
-    top: 16px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     /* height: 90vh; */
@@ -80,18 +93,23 @@ input::placeholder {
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three equal-width columns */
-    gap: 20px;
+    gap: 16px;
+    position: relative;
+    top: 6vh;
+    margin-inline: 4vw;
 }
   
 
   
 .card {
     display: flex;
+    position: relative;
+    
     align-items: center;
     max-height: 111px;
     max-width: 414px;
-    padding: 16px;
-    margin-top: 21px;
+    /* padding: 16px; */
+    /* margin-top: 16px; */
 
 }
 
@@ -125,17 +143,22 @@ span {
     margin-top: 2%;
     margin-bottom: 3px;
     padding-top: 0px;
+    font-family: 'Poppins';
+    font-size: medium;
 }
 
 .phone {
+    font-family: 'Poppins';
     font-size: small;
-    font-family: "Roboto", sans-serif;
 }
 
 .role {
     font-size: small;
+    color: blue;
+    position: relative;
+    top: 2vh;
     margin-top: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins';
 }
 
 .contanctIcon {
@@ -147,13 +170,13 @@ span {
 @media (max-width: 600px) {
     .cardContainer {
       grid-template-columns: 1fr;
-      width: 100%;
+      /* width: 100%; */
     }
 
-    .footer {
+    /* .footer {
         display: flex;
         justify-content: space-between;
-    }
+    } */
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -167,7 +190,7 @@ span {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .leftOne {
+    /* .leftOne {
         margin-right: 1.5rem;
     }
     
@@ -181,7 +204,7 @@ span {
     
     .rightTwo {
         margin-left: 1.5rem;
-    }
+    } */
 }
   
 
@@ -207,13 +230,14 @@ span {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-
+    width: 38vw;
 }
 
 .center {
     display: grid;
     position: relative;
     bottom: 1rem;
+    padding-inline: 4vw;
 }
 
 .right {
@@ -221,7 +245,7 @@ span {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-
+    width: 38vw;
 }
 
 .leftOne {
@@ -229,7 +253,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 1.5rem;
+    margin-inline: 4vw;
 }
 
 .leftTwo {
@@ -237,28 +261,34 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-inline: 4vw;
 }
 
 .rightOne {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    left: 1.5vw;
     align-items: center;
-    margin-right: 1.5rem;
+    margin-inline: 4vw;
 }
 
 .rightTwo {
     display: flex;
+    position: relative;
+    right: 1.5vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-inline: 4vw;
 }
 
 h4 {
-    font-family: "Roboto", sans-serif;
-    font-size: small;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #9ca1c7;
+    font-size: 12px;
     text-align: center;
     margin: 0px;
     margin-top: 0.75rem;
@@ -270,6 +300,10 @@ h4 {
     max-height: 18px;
 }
 
-.ipass {
-    
+.heading4 {
+    margin-top: 0px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #9ca1c7;
+    font-size: 12px;
 }
