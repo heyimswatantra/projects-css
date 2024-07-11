@@ -40,6 +40,7 @@ body {
     top: 0px;
     width: 100%;
     /* height: px; */
+    color: #9ca1c7;
     font-family: 'Poppins';
     font-size: 24px;
     font-weight: 600;
@@ -83,7 +84,7 @@ input::placeholder {
 .whiteContainer {
     position: relative;
     width: 100%;
-    background-color: white;
+    background-color: #fbfaff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     /* height: 90vh; */
@@ -145,16 +146,18 @@ span {
     padding-top: 0px;
     font-family: 'Poppins';
     font-size: medium;
+    color: #696464;
 }
 
 .phone {
     font-family: 'Poppins';
     font-size: small;
+    color: #7e7d80;
 }
 
 .role {
     font-size: small;
-    color: blue;
+    color: #275DAF;
     position: relative;
     top: 2vh;
     margin-top: 10px;
@@ -306,4 +309,8 @@ h4 {
     font-weight: 200;
     color: #9ca1c7;
     font-size: 12px;
+}
+
+h1 {
+    color: #636369;
 }
